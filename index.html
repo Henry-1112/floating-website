@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Vida Floating Restaurant - Luxury Waterfront Dining</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header id="header">
+        <!--<div style="position: fixed; top: 0; background: #ff6b6b; color: white; width: 10%; text-align: left; padding: 1px; z-index: 9999;">
+            ⚠️ PREVIEW VERSION - NOT FINAL CONTENT ⚠️
+        </div>-->
+        <div class="container">
+            <nav>
+                <a href="#" class="logo">
+                    <img src="img/floating-logo.png" alt="La Vida Floating Restaurant Logo" class="logo-image" width="300" height="150">
+                    <span class="logo-water-effect"></span>
+                </a>
+                <div class="menu-toggle" id="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#reservation">Reservations</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li>
+                        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+                            <i class="fas fa-moon"></i>
+                            <i class="fas fa-sun"></i>
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1>La Vida Floating Restaurant</h1>
+                <p>Experience exquisite dining on the water with breathtaking views and culinary excellence</p>
+                <a href="#reservation" class="btn">Reserve a Table</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="section-title">Our Story</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>A Unique Dining Experience</h3>
+                    <p>La Vida Floating is a luxury riverside restaurant in Phnom Penh, Cambodia, offering a unique floating dining experience. We serve Khmer food, fresh seafood, Asian cuisine, Western dishes, and international fusion meals. Perfect for dine-in, private events, sunset river cruises, boat tours, and live music nights — all with the best sunset view in Phnom Penh and a romantic, relaxing ambiance. Visit us for the ultimate riverside experience!</p>
+                    <p>Whether you're celebrating a special occasion or simply enjoying a night out, our floating venue provides an unforgettable atmosphere that enhances every dining experience.</p>
+                    <a href="#menu" class="btn">View Our Menu</a>
+                </div>
+                <div class="about-image">
+                    <img src="img/floating-day_80318064.jpg" alt="La Vida Floating Restaurant">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="menu" id="menu">
+        <div class="container">
+            <h2 class="section-title">Our Menu</h2>
+            
+            <!-- Search Bar -->
+            <div class="menu-search-container">
+                <div class="search-wrapper">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="menu-search" placeholder="Search dishes (e.g. 'lobster', 'vegetarian')..." class="search-input">
+                    <button id="clear-search" class="clear-search-btn" title="Clear search">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <div id="search-results-count" class="search-results-count"></div>
+            </div>
+            
+            <!-- Seasonal Menu -->
+            <div class="seasonal-menu-section">
+                <h3 class="seasonal-title">
+                    Recommendation 
+                    <!--<span class="seasonal-badge">Limited Time</span> 
+                    <span class="seasonal-period">Available: June - August 2023</span> -->
+                </h3>
+                <div class="seasonal-menu-grid">
+                    <div class="seasonal-item">
+                        <div class="seasonal-item-image">
+                            <img src="img/gallery/Grilled-New-York_80314549.jpg" alt="Grilled New York Striploin">
+                            <div class="seasonal-item-tag">Popular Menu</div>
+                        </div>
+                        <div class="seasonal-item-content">
+                            <h4>Grilled New York Striploin</h4>
+                            <p class="seasonal-item-desc">Grilled striploin steak served with bold, aromatic Kampot pepper sauce — a perfect blend of tenderness and spice.</p>
+                            <div class="seasonal-item-meta">
+                                <span class="seasonal-item-price">$30</span>
+                                <!--<span class="seasonal-item-calories">≈ 650 cal</span> -->
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="seasonal-item">
+                        <div class="seasonal-item-image">
+                            <img src="img/gallery/Crispy-Garlic-Chicken_80314609.jpg" alt="Crispy Gralic Chicken">
+                            <div class="seasonal-item-tag">Popular Menu</div>
+                        </div>
+                        <div class="seasonal-item-content">
+                            <h4>Crispy Gralic Chicken</h4>
+                            <p class="seasonal-item-desc">Crispy fried chicken tossed in golden garlic, delivering bold flavor and a satisfying crunch in every bite.</p>
+                            <div class="seasonal-item-meta">
+                                <span class="seasonal-item-price">$6</span>
+                                <!--<span class="seasonal-item-calories">≈ 320 cal</span> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="seasonal-item">
+                        <div class="seasonal-item-image">
+                            <img src="img/gallery/3Kind0f-Sashimi_80314902.jpg" alt="3 Kind of Sishami">
+                            <div class="seasonal-item-tag">Popular Menu</div>
+                        </div>
+                        <div class="seasonal-item-content">
+                            <h4>3 Kind of Sashimi</h4>
+                            <p class="seasonal-item-desc">A trio of premium sashimi: buttery Hamachi, tender salmon, and fresh Nissin—each slice a burst of pure, ocean-fresh flavor.</p>
+                            <div class="seasonal-item-meta">
+                                <span class="seasonal-item-price">$16.8</span>
+                                <!--<span class="seasonal-item-calories">≈ 480 cal</span> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Promotions -->
+            <div class="promotions-section">
+                <h3 class="promo-title">Today's Special Promotions <span class="promo-badge">HOT DEALS</span></h3>
+                <div class="promo-container">
+                    <div class="promo-item">
+                        <div class="promo-image">
+                            <img src="https://images.unsplash.com/photo-1559847844-5315695dadae?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Seafood Platter">
+                            <div class="promo-tag">-20%</div>
+                        </div>
+                        <div class="promo-content">
+                            <h4>Seafood Extravaganza Platter</h4>
+                            <p class="promo-desc">Fresh lobster, crab, oysters, and prawns with dipping sauces</p>
+                            <div class="promo-price">
+                                <span class="original-price">$85</span>
+                                <span class="discounted-price">$68</span>
+                            </div>
+                            <p class="promo-time"><i class="fas fa-clock"></i> Available until 10PM today</p>
+                        </div>
+                    </div>
+                    
+                    <div class="promo-item">
+                        <div class="promo-image">
+                            <img src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Lobster Special">
+                            <div class="promo-tag">1+1</div>
+                        </div>
+                        <div class="promo-content">
+                            <h4>Lobster Feast for Two</h4>
+                            <p class="promo-desc">Two whole grilled lobsters with garlic butter and sides</p>
+                            <div class="promo-price">
+                                <span class="original-price">$120</span>
+                                <span class="discounted-price">$60 each</span>
+                            </div>
+                            <p class="promo-time"><i class="fas fa-clock"></i> Weekdays only</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Menu Filter -->
+            <div class="menu-filter">
+                <button class="filter-btn active" data-category="all">All Dishes</button>
+                <button class="filter-btn" data-category="seafood">Seafood</button>
+                <button class="filter-btn" data-category="meat">Meat</button>
+                <button class="filter-btn" data-category="vegetarian">Vegetarian</button>
+                <button class="filter-btn" data-category="appetizers">Appetizers</button>
+                <button class="filter-btn" data-category="desserts">Desserts</button>
+                <button class="filter-btn" data-category="drinks">Drinks</button>
+            </div>
+            
+            <!-- Menu Grid -->
+            <div class="menu-grid" id="menu-grid">
+                <!-- Seafood Items -->
+                <div class="menu-item" data-category="seafood">
+                    <div class="menu-item-header">
+                        <span class="menu-item-name">Grilled Chilean Sea Bass</span>
+                        <span class="menu-item-price">$32</span>
+                    </div>
+                    <p class="menu-item-desc">Miso-marinated sea bass with wasabi mashed potatoes and seasonal vegetables</p>
+                    <span class="menu-item-tag">Chef's Recommendation</span>
+                </div>
+                
+                <div class="menu-item" data-category="seafood">
+                    <div class="menu-item-header">
+                        <span class="menu-item-name">Lobster Thermidor</span>
+                        <span class="menu-item-price">$45</span>
+                    </div>
+                    <p class="menu-item-desc">Whole lobster baked with creamy mushroom sauce and gruyère cheese</p>
+                </div>
+                
+                <!-- Meat Items -->
+                <div class="menu-item" data-category="meat">
+                    <div class="menu-item-header">
+                        <span class="menu-item-name">Filet Mignon</span>
+                        <span class="menu-item-price">$38</span>
+                    </div>
+                    <p class="menu-item-desc">8oz premium cut with red wine reduction, truffle mashed potatoes</p>
+                    <span class="menu-item-tag">Popular</span>
+                </div>
+                
+                <!-- Vegetarian Items -->
+                <div class="menu-item" data-category="vegetarian">
+                    <div class="menu-item-header">
+                        <span class="menu-item-name">Mushroom Risotto</span>
+                        <span class="menu-item-price">$22</span>
+                    </div>
+                    <p class="menu-item-desc">Arborio rice with wild mushrooms, white wine, and parmesan</p>
+                </div>
+                
+                <!-- Appetizers -->
+                <div class="menu-item" data-category="appetizers">
+                    <div class="menu-item-header">
+                        <span class="menu-item-name">Seafood Tower</span>
+                        <span class="menu-item-price">$28</span>
+                    </div>
+                    <p class="menu-item-desc">Tiered presentation of oysters, shrimp, crab legs, and ceviche</p>
+                </div>
+                
+                <!-- Desserts -->
+                <div class="menu-item" data-category="desserts">
+                    <div class="menu-item-header">
+                        <span class="menu-item-name">Chocolate Soufflé</span>
+                        <span class="menu-item-price">$14</span>
+                    </div>
+                    <p class="menu-item-desc">Warm chocolate soufflé with vanilla bean ice cream</p>
+                    <span class="menu-item-tag">Signature</span>
+                </div>
+                
+                <!-- Add more menu items here following the same pattern -->
+            </div>
+            
+            <!-- View More Button -->
+            <div class="view-more-container">
+                <button class="btn view-more-btn">View Full Menu (176 Dishes)</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <h2 class="section-title">Gallery</h2>
+            <div class="gallery-container">
+                <div class="gallery-item">
+                    <img src="img/gallery/46_80317662.jpg" alt="Restaurant Interior">
+                    <div class="gallery-item-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="img/gallery/53_80317625.jpg" alt="Chef Preparing Food">
+                    <div class="gallery-item-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="img/gallery/38_80317969.jpg" alt="Restaurant View">
+                    <div class="gallery-item-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="img/gallery/DSC07812_80314779.jpg" alt="Food Presentation">
+                    <div class="gallery-item-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="img/gallery/DSC09847_80317781.jpg" alt="Seafood Dish">
+                    <div class="gallery-item-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="img/gallery/BNI Event (2)_80317848.jpg" alt="Dessert">
+                    <div class="gallery-item-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservation Section -->
+    <section class="reservation" id="reservation">
+        <div class="container">
+            <h2 class="section-title">Make a Reservation</h2>
+            <form class="reservation-form" action="https://formspree.io/f/xovdkvag" method="POST">
+                <input type="hidden" name="_subject" value="New Reservation Request">
+                <input type="hidden" name="_replyto" value="lavidafloating@gmail.com">
+                <input type="hidden" name="_next" value="https://yourdomain.com/thank-you.html">
+                <input type="text" name="_gotcha" style="display:none">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="date">Date</label>
+                    <input type="date" id="date" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="time">Time</label>
+                    <input type="time" id="time" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="guests">Number of Guests</label>
+                    <select id="guests" class="form-control" required>
+                        <option value="">Select...</option>
+                        <option value="1">1 Person</option>
+                        <option value="2">2 People</option>
+                        <option value="3">3 People</option>
+                        <option value="4">4 People</option>
+                        <option value="5">5 People</option>
+                        <option value="6">6 People</option>
+                        <option value="7">7 People</option>
+                        <option value="8">8+ People</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="special-requests">Special Requests</label>
+                    <textarea id="special-requests" class="form-control" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn">Book Now</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Address</h3>
+                            <p>Mekong River St, Phnom Penht</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Phone</h3>
+                            <p><a href="tel:+85511800300">(855) 11 800 300</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Email</h3>
+                            <p><a href="mailto:lavidafloating@gmail.com">lavidafloating@gmail.com</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Hours</h3>
+                            <p>Monday - Sunday: 8am - 11pm</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1161.9853776787093!2d104.93654649827565!3d11.592135890581593!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x310953002fc683e3%3A0x62e098f1e98292b2!2sLa%20Vida%20Floating%20Restaurant!5e0!3m2!1sen!2skh!4v1747020521215!5m2!1sen!2skh" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <a href="#" class="logo">
+                    <img src="img/floating-logo.png" alt="La Vida Floating Restaurant Logo" class="logo-image">
+                </a>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/LaVidaFloating.PP" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/lavida.floating?igsh=NW81d3oydDFrazM5" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://t.me/bookinglavidafloating" target="_blank"><i class="fab fa-telegram"></i></a>
+                </div>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#menu">Menu</a>
+                    <a href="#gallery">Gallery</a>
+                    <a href="#reservation">Reservations</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <p class="copyright">&copy; 2025 La Vida Floating Restaurant. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
